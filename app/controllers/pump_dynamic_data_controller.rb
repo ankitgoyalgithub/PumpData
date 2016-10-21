@@ -1,0 +1,2 @@
+class PumpDynamicDataController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class SoilHealth < ApplicationRecord
+end

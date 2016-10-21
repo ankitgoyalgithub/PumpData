@@ -1,0 +1,483 @@
+html,body,.container,.row{
+  /*height: 100%;*/
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #fff;
+}
+#header{
+  height: 136px;
+  border-bottom: 1px solid #ccc;
+}
+#content{
+  padding: 20px;
+  position: relative;
+  /*height: auto;*/
+  /*height: -moz-calc(100% - 136px); Firefox */
+  /*height: -webkit-calc(100% - 136px); Chrome, Safari */
+  /*height: calc(100% - 136px);IE9+ and future browsers */
+  overflow-y: auto;
+}
+#map{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.title{
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
+  padding: 5px 0px;
+}
+.switcher a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.outer_box{
+  padding: 15px;
+  padding-bottom: 0;
+  background-color: black;
+  /*height: 100%;*/
+}
+.outer_box .col-sm-12{
+  padding: 0;
+  margin-bottom: 30px;
+}
+.inner_box{
+  height: 280px;
+    border: 1px solid #fff;
+}
+.left_div{
+  padding-right: 0!important;
+  background-color: black;
+}
+.store{
+  /*margin-top: 15px;*/
+  padding: 0px;
+  /*background-color: black;*/
+}
+.right_div .outer_box .col-sm-12 .title,.left_div .outer_box .col-sm-12 .title{
+  margin-bottom: 22px;
+}
+.left_div .outer_box .col-sm-12 .inner_box{
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
+ .mapunity_header{
+   padding: 20px;
+   background-color:#ffffff;
+ }
+ .mapunity_header .col-md-8,.mapunity_header .col-md-2{
+   padding: 0;
+   margin-top: 10px;
+   text-align: center;
+ }
+ .mapunity_header .col-md-1{
+   padding-top: 12px;
+   padding-left: 0;
+ }
+ .mapunity_header .col-md-1 img{
+   height: 75px;
+ }
+ .logo{
+   text-align: left;
+ }
+ .logo a{
+   text-decoration: none;
+ }
+ .logo a span.logo_mapunity{
+   font-size: 27px;
+   color:black;
+   padding-bottom: 3px;
+   border-bottom: 1px solid #FBAD14;
+ }
+ .logo a span.logo_tag{
+   font-size: 27px;
+   color:#ED1C24;
+ }
+ .logo a hr{
+   margin: 0;
+   margin-bottom: 5px;
+   margin-left: 10px;
+   width: 191px;
+   border-top: 1px solid #FBAD14;
+ }
+ .column_div{
+   /*height: 100%;*/
+   padding: 0;
+   position: relative;
+   padding-right: 20px;
+ }
+ .t_title{
+   font-size: 30px;
+   margin-bottom: 15px;
+ }
+ .detail{
+   padding:15px;
+   background-color:black;
+   color: #fff;
+   font-size: 22px;
+   height: 350px;
+ }
+ .btn-primary{
+   color: black;
+   font-weight: bold;
+   background-color: rgb(251, 173, 20);
+   border-color: #FFDF00;
+ }
+ .btn{
+   padding: 12px 48px;
+   margin-right: 6px;
+ }
+ .mapunity_btn_flavor{
+   background: #bb1174 !important;
+    opacity: 1 !important;
+    background-color: #bb1174;
+    color: #ffffff;
+    padding: 4px 8px 4px 8px !important;
+    font-size: 23px !important;
+ }
+ .mapunity_btn_flavor:hover{
+   color: white;
+ }
+ button.btn.btn-primary:hover{
+   background-color: black;
+   color:#fff;
+   border-color: black;
+ }
+ .navbar-inverse{
+   background-color: #fff;
+   border-color: #fff;
+ }
+ .navbar-inverse .container-fluid{
+   padding: 0;
+ }
+ #navbar-collapse-1{
+   padding: 0;
+ }
+ ul#mapunity-nav_fluid {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    list-style: none;
+}
+ul#mapunity-nav_fluid li{
+    background-color: #FFDF00;
+    position: relative;
+    padding: 12px 50px;
+    border-radius: 4px;
+}
+ul#mapunity-nav_fluid li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+}
+ button.btn.btn-primary:focus{
+   background-color: rgb(251, 173, 20);
+   border-color: #FFDF00;
+   color: black;
+ }
+ .administrative-login{
+   /*background-color: black;
+   margin-top: 60px;
+   padding: 15px;*/
+   padding-bottom: 25px;
+   margin-top: 65px;
+ }
+ .footer-content{
+   font-size: 12px;
+   color: #cdcdcd;
+   padding: 0;
+ }
+ .footer-main-text{
+   color: white;
+   font-size: 16px;
+   padding: 5px 0px;
+   padding-top: 0;
+ }
+ .footer-small-text{
+   color: #fff;
+   font-size: 11px;
+   padding-bottom: 8px;
+ }
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-12{
+   padding: 0px 15px;
+   margin-bottom: 0;
+ }
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-9{
+   padding: 0px 15px;
+ }
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-3{
+   padding-right: 0;
+   padding-left: 8px;
+ }
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-3 img{
+   height: 32px;
+ }
+ .form-input-image-size{
+   padding-top: 1px;
+ }
+ .store_heading{
+   padding: 5px 0px;
+   color: white;
+   padding-bottom: 15px;
+   font-size: 16px;
+ }
+ .products_bar{
+    text-align: center;
+    padding-top: 28px;
+ }
+ .products_tag{
+    color: black;
+    text-align: right;
+    padding: 8px 20px 7px;
+ }
+ .leaflet-right{
+   left: 0!important;
+ }
+ .leaflet-top .leaflet-control{
+   margin-top: 20px!important;
+    margin-right: 15px!important;
+ }
+ .leaflet-control-zoomslider-wrap{
+   background: url("zoombar.png") no-repeat;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: -2px;
+    border: none;
+    height: 9px !important;
+    margin-bottom: -12px;
+ }
+ .leaflet-control-zoomslider-knob{
+   display: none!important;
+ }
+
+ .elements_box,.city_boxes{
+   display: flex;
+   display: -webkit-flex;
+   justify-content: space-between;
+   flex-direction: column;
+ }
+ .elements_box .element{
+   /*padding-bottom: 20px;*/
+   /*float: right;*/
+   width: 100%;
+ }
+ .elements_box .element .element_img{
+   width: 30%;
+   float: left;
+   padding-left: 18px;
+ }
+ .elements_box .element .element_img img{
+   height: 36px;
+ }
+ .elements_box .element .element_name{
+   padding-top: 7px;
+   padding-left:15px;
+   font-size: 16px;
+   font-family: cursive;
+   width: 70%;
+   float: right;
+ }
+ .elements_box .element .element_name a{
+  text-decoration: none;
+  color: black;
+ }
+
+ @media (max-width:2100px){
+ .white_table{
+   padding-left: 60px!important;
+ }
+}
+@media (max-width:1920px){
+  .white_table{
+    padding-left: 45px!important;
+  }
+}
+@media (max-width:1666px){
+  .white_table{
+    padding-left: 20px!important;
+  }
+}
+@media (max-width:1366px){
+}
+ @media (max-width: 1280px){
+   .logo a span.logo_mapunity{
+     font-size: 26px!important;
+   }
+   .logo a span.logo_tag{
+     font-size: 26px!important;
+   }
+   .btn{
+     padding: 8px 61px!important;
+   }
+   .dth_service{
+     height: 258px!important;
+   }
+ }
+ @media (max-width:1179px) {
+   .btn{
+     padding: 8px 55px!important;
+   }
+ }
+ @media (max-width:1100px) {
+   .logo a span.logo_mapunity{
+     font-size: 23px!important;
+   }
+   .logo a hr{
+     width: 165px!important;
+   }
+   .logo a span.logo_tag{
+     font-size: 26px!important;
+   }
+   .btn{
+     padding: 8px 50px!important;
+   }
+ }
+@media (max-width: 1025px) {
+ .logo a hr{
+   width: 165px!important;
+ }
+ .logo a span.logo_tag{
+   font-size: 26px!important;
+ }
+ .btn{
+   padding: 8px 33px!important;
+ }
+}
+@media (max-width: 991px) {
+ /*#content{
+   overflow-y: auto;
+ }*/
+ .mapunity_header .col-md-8, .mapunity_header .col-md-2{
+       margin-top: -74px!important;
+       z-index: 1;
+ }
+ .mapunity_header .col-md-1{
+   z-index: 1;
+ }
+ button.navbar-toggle{
+   z-index: 2;
+ }
+ .column_div{
+   margin-bottom: 20px;
+   padding-right: 0px;
+ }
+ .btn{
+   padding: 8px 20px!important;
+ }
+ .middle_div,.right_div{
+   width: 100%!important;
+ }
+ #header{
+   height: 165px!important;
+ }
+ .outer_box{
+   /*height: auto!important;*/
+   padding-bottom: 15px!important;
+ }
+ /*.column_div{
+   height: auto!important;
+ }*/
+ .products_bar{
+   width: 100%!important;
+   margin-top: -78px!important;
+ }
+}
+@media (max-width: 767px) {
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-9{
+       padding-right: 90px;
+ }
+ .administrative-login .footer-content form.form-horizontal div.form-group .col-sm-3{
+   padding-right: 15px;
+   padding-left: 8px;
+   float: right;
+   margin-top: -35px;
+ }
+ .btn {
+    padding: 8px 15px!important;
+ }
+}
+@media (max-width:691px) {
+  .btn {
+     padding: 8px 14px!important;
+  }
+}
+@media (max-width:681px) {
+  .btn {
+     padding: 8px 13px!important;
+  }
+}
+@media (max-width:671px) {
+  .btn {
+     padding: 8px 12px!important;
+  }
+}
+@media (max-width:661px) {
+  .btn {
+     padding: 8px 11px!important;
+  }
+}
+@media (max-width:651px) {
+  .btn {
+     padding: 8px 10px!important;
+  }
+}
+@media (max-width:641px) {
+  .btn {
+     padding: 8px 9px!important;
+  }
+}
+@media (max-width:631px) {
+  .btn {
+     padding: 8px 8px!important;
+  }
+  .products_tag{
+    font-size: 20px!important;
+  }
+}
+@media (max-width:621px) {
+  .btn {
+     padding: 8px 7px!important;
+  }
+}
+@media (max-width:611px) {
+  .btn {
+     padding: 8px 6px!important;
+  }
+}
+@media (max-width:591px) {
+  .products_tag{
+    font-size: 10px!important;
+    padding: 0px 11px 0px;
+  }
+  .btn{
+    padding: 4px 1px!important;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

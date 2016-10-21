@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PumpData</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+
+    <!-- css for dashboard -->
+    <link href="/assets/dashboard/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/nprogress.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/green.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/jqvmap.min.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/leaflet.css" rel="stylesheet"/>
+    <link href="/assets/dashboard/custom.min.css" rel="stylesheet">
+    <!-- end css for dashboard -->
+
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+  </head>
+
+  <body  class="nav-md">
+       <%= yield %>
+  </body>
+</html>

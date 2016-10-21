@@ -1,0 +1,8 @@
+<h1> Add New User </h1>
+<%= form_tag :action => 'create' do %>
+
+<p><label for = "user_role_id">Role</label>:
+<%= collection_select(:users, :role_id, @roles, :id, :title, prompt: true) %></p>
+
+<%= submit_tag "Create" %>
+<% end -%>

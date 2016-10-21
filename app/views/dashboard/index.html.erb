@@ -1,0 +1,1103 @@
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Pump Data</span></a>
+            </div>
+            <div class="clearfix"></div>
+            <br />
+
+            <!-- sidebar menu -->
+            <%= render 'sidebar_menu' %>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">  
+          <div class="row" id="pump-map">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pump location And Data</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="dashboard-widget-content">
+                      <div id="mapid" class="col-md-12 col-sm-12 col-xs-12" style="height:550px;"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row" id="farmer-details" style="display: none;">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Farmer Details</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="dashboard-widget-content">
+                      <table class="table">
+                      <!-- <thead>
+                        <tr>
+                          <th>Parameter</th>
+                          <th>Value</th>
+                        </tr>
+                      </thead> -->
+                      <tbody>
+                        <tr>
+                          <th scope="row">Name</th>
+                          <td>1234</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Father's Name</th>
+                          <td>22/05/2016</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Address</th>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Latitude and Longitude</th>
+                          <td>12/45</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Pump Type</th>
+                          <td>22 acre</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">PUID</th>
+                          <td>22' 34'</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Adhaar Card Id</th>
+                          <td>22' 34'</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Soil Health Card Id</th>
+                          <td>22' 34'</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Crop Details</th>
+                          <td>22' 34'</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Grid Power Availability</th>
+                          <td>No</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ground Water Level</th>
+                          <td>223</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Village</th>
+                          <td>Ramnagar</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Panchayata</th>
+                          <td>Ramnagar</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Tehsil</th>
+                          <td>Palamu</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Constituency</th>
+                          <td>Hazaribagh</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">District</th>
+                          <td>Hazaribagh</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row" id="pump-details" style="display: none;">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pump Details</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="dashboard-widget-content">
+                      <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row">PUID</th>
+                          <td>1234</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Serial Number</th>
+                          <td>22/05/2016</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ADMIN. SANCTION NO./ DATE</th>
+                          <td>570-77 / 28-4-15</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">WORK ORDER NO./ DATE</th>
+                          <td>578-87 / 28-4-15</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HP @ Pump Head METER</th>
+                          <td>5@75</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Power type</th>
+                          <td>AC</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Voltage rating</th>
+                          <td>110V-220V</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Type</th>
+                          <td>Submersible</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SOLAR PANEL capacity</th>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Watts/panel (W)</th>
+                          <td>250</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Solar Panel number</th>
+                          <td>16</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Solar panel o/p voltage</th>
+                          <td>36 V</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Solar panel type</th>
+                          <td>Photon</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">MODEL NO.</th>
+                          <td>Shakti- SHT500070-18-380v</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">TRACOR</th>
+                          <td>Manual</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ACCES. & OTHER MATERIAL</th>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SUPPLY DATE</th>
+                          <td>6/5/2015</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">COST (RS.)</th>
+                          <td>617049</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">FIRM NAME</th>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">HOME LIGHTING SYSTEM ( YES / NO)</th>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">FENSING</th>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Grid power availability</th>
+                          <td>No</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ground water level</th>
+                          <td>200</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Water source</th>
+                          <td>Tank</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Installation done by</th>
+                          <td>Solar Installation</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Warrenty status</th>
+                          <td>InActive</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">ACCES. & OTHER MATERIAL</th>
+                          <td>Yes</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Warranty upto</th>
+                          <td>6/7/2017</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2> Details </h2>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="dashboard-widget-content">
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-primary btn-md dashboard-selector-buttons" id="farmer-details-button">Farmer</button>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-primary btn-md dashboard-selector-buttons" id="pump-details-button">Pump</button>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-primary btn-md dashboard-selector-buttons">Soil Health Card</button>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                    <button type="button" class="btn btn-primary btn-md dashboard-selector-buttons">Subsidy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Run Hour Vs Load Hour</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div id="mainb" style="height:350px;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Pump Performance</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a> </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a> </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div id="echart_guage" style="height:300px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <br/>
+
+          <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Soil Health Card <!--<small>across TSP's</small>--></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Parameter</th>
+                          <th>Value</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Soil Sample Number</th>
+                          <td>1234</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sample Collected on</th>
+                          <td>22/05/2016</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Survey No.</th>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Khasra No. / Dag No.</th>
+                          <td>12/45</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Farm Size</th>
+                          <td>22 acre</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Geo Position</th>
+                          <td>22' 34'</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+    <script src="/assets/dashboard/fastclick.js"></script>
+    <script src="/assets/dashboard/nprogress.js"></script>
+    <script src="/assets/dashboard/Chart.min.js"></script>
+    <script src="/assets/dashboard/gauge.min.js"></script>
+    <script src="/assets/dashboard/bootstrap-progressbar.min.js"></script>
+    <script src="/assets/dashboard/icheck.min.js"></script>
+    <script src="/assets/dashboard/skycons.js"></script>
+    <script src="/assets/dashboard/jquery.flot.js"></script>
+    <script src="/assets/dashboard/jquery.flot.pie.js"></script>
+    <script src="/assets/dashboard/jquery.flot.time.js"></script>
+    <script src="/assets/dashboard/jquery.flot.stack.js"></script>
+    <script src="/assets/dashboard/jquery.flot.resize.js"></script>
+    <script src="/assets/dashboard/jquery.flot.orderBars.js"></script>
+    <script src="/assets/dashboard/jquery.flot.spline.min.js"></script>
+    <script src="/assets/dashboard/curvedLines.js"></script>
+    <script src="/assets/dashboard/date.js"></script>
+    <script src="/assets/dashboard/jquery.vmap.js"></script>
+    <script src="/assets/dashboard/jquery.vmap.world.js"></script>
+    <script src="/assets/dashboard/jquery.vmap.sampledata.js"></script>
+    <script src="/assets/dashboard/moment.min.js"></script>
+    <script src="/assets/dashboard/daterangepicker.js"></script>
+    <script src="/assets/dashboard/echarts.min.js"></script>
+    <script src="/assets/dashboard/world.js"></script>
+    <script src="/assets/dashboard/leaflet-src.js"></script>
+    <script src="/assets/dashboard/custom.min.js"></script>
+    <!-- Flot -->
+    <script>
+      $('#farmer-details-button').click(function(event){
+          $('#pump-map').css('display','none');
+          $('#pump-details').css('display','none');
+          $('#farmer-details').css('display','block');
+      });
+
+      $('#pump-details-button').click(function(event){
+          $('#pump-map').css('display','none');
+          $('#farmer-details').css('display','none');
+          $('#pump-details').css('display','block');
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        var data1 = [
+          [gd(2012, 1, 1), 17],
+          [gd(2012, 1, 2), 74],
+          [gd(2012, 1, 3), 6],
+          [gd(2012, 1, 4), 39],
+          [gd(2012, 1, 5), 20],
+          [gd(2012, 1, 6), 85],
+          [gd(2012, 1, 7), 7]
+        ];
+
+        var data2 = [
+          [gd(2012, 1, 1), 82],
+          [gd(2012, 1, 2), 23],
+          [gd(2012, 1, 3), 66],
+          [gd(2012, 1, 4), 9],
+          [gd(2012, 1, 5), 119],
+          [gd(2012, 1, 6), 6],
+          [gd(2012, 1, 7), 9]
+        ];
+        $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+          data1, data2
+        ], {
+          series: {
+            lines: {
+              show: false,
+              fill: true
+            },
+            splines: {
+              show: true,
+              tension: 0.4,
+              lineWidth: 1,
+              fill: 0.4
+            },
+            points: {
+              radius: 0,
+              show: true
+            },
+            shadowSize: 2
+          },
+          grid: {
+            verticalLines: true,
+            hoverable: true,
+            clickable: true,
+            tickColor: "#d5d5d5",
+            borderWidth: 1,
+            color: '#fff'
+          },
+          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+          xaxis: {
+            tickColor: "rgba(51, 51, 51, 0.06)",
+            mode: "time",
+            tickSize: [1, "day"],
+            //tickLength: 10,
+            axisLabel: "Date",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 12,
+            axisLabelFontFamily: 'Verdana, Arial',
+            axisLabelPadding: 10
+          },
+          yaxis: {
+            ticks: 8,
+            tickColor: "rgba(51, 51, 51, 0.06)",
+          },
+          tooltip: false
+        });
+
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+      });
+    </script>
+    <!-- /Flot -->
+
+    <!-- JQVMap -->
+    <script>
+      $(document).ready(function(){
+        $('#world-map-gdp').vectorMap({
+            map: 'world_en',
+            backgroundColor: null,
+            color: '#ffffff',
+            hoverOpacity: 0.7,
+            selectedColor: '#666666',
+            enableZoom: true,
+            showTooltip: true,
+            values: sample_data,
+            scaleColors: ['#E6F2F0', '#149B7E'],
+            normalizeFunction: 'polynomial'
+        });
+      });
+    </script>
+    <!-- /JQVMap -->
+
+    <!-- Skycons -->
+    <script>
+      $(document).ready(function() {
+        var icons = new Skycons({
+            "color": "#73879C"
+          }),
+          list = [
+            "clear-day", "clear-night", "partly-cloudy-day",
+            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+            "fog"
+          ],
+          i;
+
+        for (i = list.length; i--;)
+          icons.set(list[i], list[i]);
+
+        icons.play();
+      });
+    </script>
+    <!-- /Skycons -->
+
+    <!-- Doughnut Chart -->
+    <script>
+      $(document).ready(function(){
+        var options = {
+          legend: false,
+          responsive: false
+        };
+
+        new Chart(document.getElementById("canvas1"), {
+          type: 'doughnut',
+          tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+          data: {
+            labels: [
+              "Symbian",
+              "Blackberry",
+              "Other",
+              "Android",
+              "IOS"
+            ],
+            datasets: [{
+              data: [15, 20, 30, 10, 30],
+              backgroundColor: [
+                "#BDC3C7",
+                "#9B59B6",
+                "#E74C3C",
+                "#26B99A",
+                "#3498DB"
+              ],
+              hoverBackgroundColor: [
+                "#CFD4D8",
+                "#B370CF",
+                "#E95E4F",
+                "#36CAAB",
+                "#49A9EA"
+              ]
+            }]
+          },
+          options: options
+        });
+      });
+    </script>
+    <!-- /Doughnut Chart -->
+    
+    <!-- bootstrap-daterangepicker -->
+    <script>
+      $(document).ready(function() {
+
+        var cb = function(start, end, label) {
+          console.log(start.toISOString(), end.toISOString(), label);
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        };
+
+        var optionSet1 = {
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment(),
+          minDate: '01/01/2012',
+          maxDate: '12/31/2015',
+          dateLimit: {
+            days: 60
+          },
+          showDropdowns: true,
+          showWeekNumbers: true,
+          timePicker: false,
+          timePickerIncrement: 1,
+          timePicker12Hour: true,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          opens: 'left',
+          buttonClasses: ['btn btn-default'],
+          applyClass: 'btn-small btn-primary',
+          cancelClass: 'btn-small',
+          format: 'MM/DD/YYYY',
+          separator: ' to ',
+          locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+          }
+        };
+        $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+        $('#reportrange').daterangepicker(optionSet1, cb);
+        $('#reportrange').on('show.daterangepicker', function() {
+          console.log("show event fired");
+        });
+        $('#reportrange').on('hide.daterangepicker', function() {
+          console.log("hide event fired");
+        });
+        $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+          console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+        });
+        $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+          console.log("cancel event fired");
+        });
+        $('#options1').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+        });
+        $('#options2').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+        });
+        $('#destroy').click(function() {
+          $('#reportrange').data('daterangepicker').remove();
+        });
+      });
+    </script>
+    <!-- /bootstrap-daterangepicker -->
+
+    <!-- gauge.js -->
+    <script>
+      var opts = {
+          lines: 12,
+          angle: 0,
+          lineWidth: 0.4,
+          pointer: {
+              length: 0.75,
+              strokeWidth: 0.042,
+              color: '#1D212A'
+          },
+          limitMax: 'false',
+          colorStart: '#1ABC9C',
+          colorStop: '#1ABC9C',
+          strokeColor: '#F0F3F3',
+          generateGradient: true
+      };
+      var target = document.getElementById('foo'),
+          gauge = new Gauge(target).setOptions(opts);
+
+      gauge.maxValue = 6000;
+      gauge.animationSpeed = 32;
+      gauge.set(3200);
+      gauge.setTextField(document.getElementById("gauge-text"));
+    </script>
+    <!-- /gauge.js -->
+
+    <script>
+
+      var theme = {
+          color: [
+              '#26B99A', '#34495E', '#BDC3C7', '#3498DB',
+              '#9B59B6', '#8abb6f', '#759c6a', '#bfd3b7'
+          ],
+
+          title: {
+              itemGap: 8,
+              textStyle: {
+                  fontWeight: 'normal',
+                  color: '#408829'
+              }
+          },
+
+          dataRange: {
+              color: ['#1f610a', '#97b58d']
+          },
+
+          toolbox: {
+              color: ['#408829', '#408829', '#408829', '#408829']
+          },
+
+          tooltip: {
+              backgroundColor: 'rgba(0,0,0,0.5)',
+              axisPointer: {
+                  type: 'line',
+                  lineStyle: {
+                      color: '#408829',
+                      type: 'dashed'
+                  },
+                  crossStyle: {
+                      color: '#408829'
+                  },
+                  shadowStyle: {
+                      color: 'rgba(200,200,200,0.3)'
+                  }
+              }
+          },
+
+          dataZoom: {
+              dataBackgroundColor: '#eee',
+              fillerColor: 'rgba(64,136,41,0.2)',
+              handleColor: '#408829'
+          },
+          grid: {
+              borderWidth: 0
+          },
+
+          categoryAxis: {
+              axisLine: {
+                  lineStyle: {
+                      color: '#408829'
+                  }
+              },
+              splitLine: {
+                  lineStyle: {
+                      color: ['#eee']
+                  }
+              }
+          },
+
+          valueAxis: {
+              axisLine: {
+                  lineStyle: {
+                      color: '#408829'
+                  }
+              },
+              splitArea: {
+                  show: true,
+                  areaStyle: {
+                      color: ['rgba(250,250,250,0.1)', 'rgba(200,200,200,0.1)']
+                  }
+              },
+              splitLine: {
+                  lineStyle: {
+                      color: ['#eee']
+                  }
+              }
+          },
+          timeline: {
+              lineStyle: {
+                  color: '#408829'
+              },
+              controlStyle: {
+                  normal: {color: '#408829'},
+                  emphasis: {color: '#408829'}
+              }
+          },
+
+          k: {
+              itemStyle: {
+                  normal: {
+                      color: '#68a54a',
+                      color0: '#a9cba2',
+                      lineStyle: {
+                          width: 1,
+                          color: '#408829',
+                          color0: '#86b379'
+                      }
+                  }
+              }
+          },
+          map: {
+              itemStyle: {
+                  normal: {
+                      areaStyle: {
+                          color: '#ddd'
+                      },
+                      label: {
+                          textStyle: {
+                              color: '#c12e34'
+                          }
+                      }
+                  },
+                  emphasis: {
+                      areaStyle: {
+                          color: '#99d2dd'
+                      },
+                      label: {
+                          textStyle: {
+                              color: '#c12e34'
+                          }
+                      }
+                  }
+              }
+          },
+          force: {
+              itemStyle: {
+                  normal: {
+                      linkStyle: {
+                          strokeColor: '#408829'
+                      }
+                  }
+              }
+          },
+          chord: {
+              padding: 4,
+              itemStyle: {
+                  normal: {
+                      lineStyle: {
+                          width: 1,
+                          color: 'rgba(128, 128, 128, 0.5)'
+                      },
+                      chordStyle: {
+                          lineStyle: {
+                              width: 1,
+                              color: 'rgba(128, 128, 128, 0.5)'
+                          }
+                      }
+                  },
+                  emphasis: {
+                      lineStyle: {
+                          width: 1,
+                          color: 'rgba(128, 128, 128, 0.5)'
+                      },
+                      chordStyle: {
+                          lineStyle: {
+                              width: 1,
+                              color: 'rgba(128, 128, 128, 0.5)'
+                          }
+                      }
+                  }
+              }
+          },
+          gauge: {
+              startAngle: 225,
+              endAngle: -45,
+              axisLine: {
+                  show: true,
+                  lineStyle: {
+                      color: [[0.2, '#86b379'], [0.8, '#68a54a'], [1, '#408829']],
+                      width: 8
+                  }
+              },
+              axisTick: {
+                  splitNumber: 10,
+                  length: 12,
+                  lineStyle: {
+                      color: 'auto'
+                  }
+              },
+              axisLabel: {
+                  textStyle: {
+                      color: 'auto'
+                  }
+              },
+              splitLine: {
+                  length: 18,
+                  lineStyle: {
+                      color: 'auto'
+                  }
+              },
+              pointer: {
+                  length: '90%',
+                  color: 'auto'
+              },
+              title: {
+                  textStyle: {
+                      color: '#333'
+                  }
+              },
+              detail: {
+                  textStyle: {
+                      color: 'auto'
+                  }
+              }
+          },
+          textStyle: {
+              fontFamily: 'Arial, Verdana, sans-serif'
+          }
+      };
+
+      var echartBar = echarts.init(document.getElementById('mainb'), theme);
+
+      echartBar.setOption({
+        title: {
+          text: '',
+          subtext: ''
+        },
+        tooltip: {
+          trigger: 'axis'
+        },
+        legend: {
+          data: ['Run Hour', 'Load Hour']
+        },
+        toolbox: {
+          show: false
+        },
+        calculable: false,
+        xAxis: [{
+          type: 'category',
+          data: ['12', '12:30', '1', '1:30', '2', '2:30', '3', '3:30', '4', '4:30', '5', '5:30', '6']
+        }],
+        yAxis: [{
+          type: 'value'
+        }],
+        series: [{
+          name: 'Run Hour',
+          type: 'bar',
+          data: [2.0, 4.9, 7.0, 13.2, 15.6, 16.7, 15.6, 12.2, 12.6, 2.0, 6.4, 3.3, 9.6],
+          markPoint: {
+            data: [{
+              type: 'max',
+              name: '???'
+            }, {
+              type: 'min',
+              name: '???'
+            }]
+          },
+          markLine: {
+            data: [{
+              type: 'average',
+              name: '???'
+            }]
+          }
+        }, {
+          name: 'Load Hour',
+          type: 'bar',
+          data: [2.6, 5.9, 9.0, 16.4, 18.7, 17.7, 17.6, 18.2, 8.7, 18.8, 6.0, 2.3, 9.7],
+          markPoint: {
+            data: [{
+              name: 'sales',
+              value: 182.2,
+              xAxis: 7,
+              yAxis: 183,
+            }, {
+              name: 'purchases',
+              value: 2.3,
+              xAxis: 11,
+              yAxis: 3
+            }]
+          },
+          markLine: {
+            data: [{
+              type: 'average',
+              name: '???'
+            }]
+          }
+        }]
+      });
+
+      var echartGauge = echarts.init(document.getElementById('echart_guage'), theme);
+
+      echartGauge.setOption({
+        tooltip: {
+          formatter: "{a} <br/>{b} : {c}%"
+        },
+        toolbox: {
+          show: true,
+          feature: {
+            restore: {
+              show: true,
+              title: "Restore"
+            },
+            saveAsImage: {
+              show: true,
+              title: "Save Image"
+            }
+          }
+        },
+        series: [{
+          name: 'Performance',
+          type: 'gauge',
+          center: ['50%', '50%'],
+          startAngle: 140,
+          endAngle: -140,
+          min: 0,
+          max: 100,
+          precision: 0,
+          splitNumber: 10,
+          axisLine: {
+            show: true,
+            lineStyle: {
+              color: [
+                [0.2, 'lightgreen'],
+                [0.4, 'orange'],
+                [0.8, 'skyblue'],
+                [1, '#ff4500']
+              ],
+              width: 30
+            }
+          },
+          axisTick: {
+            show: true,
+            splitNumber: 5,
+            length: 8,
+            lineStyle: {
+              color: '#eee',
+              width: 1,
+              type: 'solid'
+            }
+          },
+          axisLabel: {
+            show: true,
+            formatter: function(v) {
+              switch (v + '') {
+                case '10':
+                  return 'Very Good';
+                case '30':
+                  return 'Good';
+                case '60':
+                  return 'Average';
+                case '90':
+                  return 'Bad';
+                default:
+                  return '';
+              }
+            },
+            textStyle: {
+              color: '#333'
+            }
+          },
+          splitLine: {
+            show: true,
+            length: 30,
+            lineStyle: {
+              color: '#eee',
+              width: 2,
+              type: 'solid'
+            }
+          },
+          pointer: {
+            length: '80%',
+            width: 8,
+            color: 'auto'
+          },
+          title: {
+            show: true,
+            offsetCenter: ['-65%', -10],
+            textStyle: {
+              color: '#333',
+              fontSize: 15
+            }
+          },
+          detail: {
+            show: true,
+            backgroundColor: 'rgba(0,0,0,0)',
+            borderWidth: 0,
+            borderColor: '#ccc',
+            width: 100,
+            height: 40,
+            offsetCenter: ['-60%', 10],
+            formatter: '{value}%',
+            textStyle: {
+              color: 'auto',
+              fontSize: 30
+            }
+          },
+          data: [{
+            value: 59.74,
+            name: 'Performance'
+          }]
+        }]
+      });
+
+
+      var mymap = L.map('mapid').setView([20.5937, 78.9629], 5);
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2V3YWwwNyIsImEiOiJjaXFsODZkMjAwMDBoZ3NqZnA1b2l1NXRnIn0.I7zATwJ7V0Ju8H6quwjG-g', {
+          maxZoom: 7,
+           attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>,Developed By <a href="#">Kewal</a>',
+          accessToken: 'pk.eyJ1Ijoia2V3YWwwNyIsImEiOiJjaXFsODZkMjAwMDBoZ3NqZnA1b2l1NXRnIn0.I7zATwJ7V0Ju8H6quwjG-g'
+      }).addTo(mymap);
+      var marker = L.marker([20.5937, 78.9629]).addTo(mymap);
+      marker.bindPopup("<b>Average Power:22</b><br>Utilization: 56.4%").openPopup();
+      var popup = L.popup();
+       function onMapClick(e) {
+           popup
+               .setLatLng(e.latlng)
+               .setContent("<b>Average Power:22</b><br>Utilization: 56.4%")
+               .openOn(mymap);
+       }
+      mymap.on('click', onMapClick);
+    </script>

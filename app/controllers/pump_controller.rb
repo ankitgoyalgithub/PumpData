@@ -1,0 +1,2 @@
+class PumpController < ApplicationController
+end

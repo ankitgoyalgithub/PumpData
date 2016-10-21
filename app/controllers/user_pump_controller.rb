@@ -1,0 +1,2 @@
+class UserPumpController < ApplicationController
+end

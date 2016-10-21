@@ -1,0 +1,2 @@
+class SoilHealthController < ApplicationController
+end
